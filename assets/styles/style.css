@@ -1,0 +1,330 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: justify;
+}
+
+div .heading-text {
+    text-align: center;
+    margin: 1rem 0;
+    color: #fb1a1b;
+}
+
+.intro-text p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.intro-text .intro-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;   
+}
+
+h3 a:hover {
+    color: #fb1a1b;
+}
+
+button {
+    padding: .8rem 2.5rem;
+
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #fb1a1b;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+button:hover {
+    border: 3px solid #fb1a1b;
+    color: #fb1a1b;
+    background-color: transparent;
+}
+
+/* Header */
+header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+header.navbar-container .logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fb1a1b;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: #fb1a1b;
+    color: white;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+}
+
+/* About Me */
+#aboutme {
+    display: flex;
+    align-items: center;
+}
+
+.profile-text {
+    flex: 2 1;
+    padding-right: 4rem;
+}
+
+#aboutme div .heading-text {
+    text-align: left
+}
+
+#aboutme .intro-text .intro-title {
+    text-align: left;
+}
+
+.profile-image {
+    flex: 1 2;
+    display: flex;
+    position: relative;
+}
+
+.profile-image img {
+    height: 500px;
+    margin: auto;
+}
+
+.profile-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: -10;
+}
+
+.profile-bg svg {
+    height: 80%;
+    width: 100%;
+}
+
+/* Portofolio */
+#portofolio {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.project-list, .cert-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.project-item{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.project-item img {
+    width: 400px;
+    height: 200px;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-description {
+    justify-content: space-evenly;
+    padding: 0 20px 20px;
+    max-width: 400px;
+}
+
+/* Certificate */
+#cert {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.cert-item img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.cert-description {
+    justify-content: space-evenly;
+    padding: 0;
+    max-width: 500px;
+}
+
+.cert-description h3 {
+    margin-bottom: 0.5rem;
+}
+
+.cert-description p {
+    margin-top: 0;
+}
+/* Contact */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+   
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+   
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #fb1a1b;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+   
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+
+footer {
+    padding: 20px;
+    color: black;
+    background-color: #f1f5f9;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Viewport 768px */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .profile-text {
+        padding-right: 0;
+    }
+
+    header.navbar-container {
+        flex-direction: column;
+    }
+    
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+    
+    main .card {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Header */
+    .profile-image img {
+        height: 390px;
+        margin: auto;
+    }
+
+    /* Portofolio */
+    .project-item img {
+        width: 300px;
+        height: 150px;
+        padding: 0;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .project-description {
+        justify-content: space-evenly;
+        padding: 0 20px 20px;
+        max-width: 300px;
+    }
+
+    /* Certificate */
+    .cert-item img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .cert-description {
+        justify-content: space-evenly;
+        padding: 0;
+        max-width: 300px;
+    }
+}
